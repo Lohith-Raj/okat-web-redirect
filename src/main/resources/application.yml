@@ -1,0 +1,18 @@
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          okta:
+            user-name-attribute: email
+
+okta:
+  oauth2:
+    issuer: https://dev-82466008.okta.com/oauth2/default
+    client-id: 0oa4wirfgcN49VgSd5d7
+    client-secret: e4tBgPqatOEdjvQ-hxRls4McNNa0QqZDvYi0Y7_R
+    redirect-uri: /authorization-code/callback
+    scopes:
+    - profile
+    - email
+    - openid
